@@ -1,0 +1,5 @@
+<view class="container">
+  <text class="title">使用指南</text>
+  <text class="text">1.点击首页已发布的动态进入商品详情页面，页面左上角有个返回按钮，可以回到之前的页面，此时我们点击分享，把该商品分享给好友</text>
+  <text class='text'>2.好友点击消息卡片进入小程序，也可转发到群聊</text>
+</view>

@@ -1,0 +1,91 @@
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.body {
+    width: 100%;
+}
+
+.search {
+    width: 80%;
+    position: absolute;
+    top: 20rpx;
+    left: 50rpx;
+    height: 20rpx;
+    background-color: rgb(255,255,255);
+    padding: 20rpx;
+    border-radius: 60rpx;
+    border: solid 1px rgb(155, 241, 175);
+    font-size: 80%;
+}
+
+.search-input {
+    position: relative;
+    bottom: 18rpx;
+    left: 50rpx;
+    width: 470rpx;
+}
+
+.search-icon {
+    position: absolute;
+    bottom: 8rpx;
+    left: 560rpx;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 120rpx;
+    border-top: solid 1px rgb(204,198,198);
+}
+
+.tab-left {
+    width: 200rpx;
+    line-height: 320%;
+    border-right: solid 1px rgb(175,174,174);
+    text-align: center;
+    font-size: 80%;
+    color: rgb(126,122,122);
+}
+
+.tab-left view {
+    border-bottom: solid 1px rgb(168, 235, 168);
+}
+
+.tab-left .active {
+    color: rgb(14,13,13);
+    border-left: solid 3px rgb(46, 197, 127);
+}
+
+.tab-right {   
+    line-height: 200%;
+    width: 500rpx;
+    padding-top: 120rpx;
+}
+
+.tab-right .right-item {
+    display: none;
+    color: rgb(255, 255, 255);
+}
+
+.tab-right .right-item.active {
+    display: block;
+}
+
+.items {
+    margin-left: 100px;
+    size: default;
+    font-size: 120%;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50rpx;
+    margin-left: 100px;
+    color: rgb(143, 129, 129);
+    font-size: 80%;
+    text-align: center;
+}

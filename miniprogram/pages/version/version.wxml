@@ -1,0 +1,6 @@
+<view class="container">
+  <text class="title">版本 V1.2 10-26</text>
+  <text class="text">*修复只能按标签查找bug</text>
+  <text class="text">*新增擦亮已发布商品功能</text>
+  <text class="text">*新增判断未登录时不能发布商品</text>
+</view>

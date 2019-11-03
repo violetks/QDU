@@ -1,0 +1,28 @@
+<view class="userinfo">
+  <button bindgetuserinfo="getUserInfo" openType="getUserInfo" wx:if="{{!hasUserInfo&&canIUse}}"> 获取头像昵称 </button>
+  <block wx:else>
+    <image class="userinfo-avatar" mode="cover" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+
+<view bindtap="goLoveTap" class="item">
+  <image class="image" src='../../images/love.png'></image>
+  <text class="text">我喜欢的</text>
+</view>
+
+<view bindtap="goShelvesTap" class="item">
+  <image class="image" src='../../images/redact.png'></image>
+  <text class="text">我发布的</text>
+</view>
+
+<view bindtap="goVersionTap" class="item">
+  <image class="image" src="../../images/versions.png"></image>
+  <text class="text">版本信息</text>
+  <text class="text-end">V1.2</text>
+</view>
+
+<view bindtap="goAboutTap" class="item">
+  <image class="image" src='../../images/about.png'></image>
+  <text class="text">关于</text>
+</view>

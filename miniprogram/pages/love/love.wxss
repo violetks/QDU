@@ -1,0 +1,83 @@
+.container {
+    background-color: #F1F7FA;
+    width: 100%;
+}
+
+.body {
+    width: 100%;
+}
+
+.tab-under {
+    width: 100%;
+}
+
+.message-container {
+    background-color: #ffffff;
+}
+
+.head-image {
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 20rpx;
+    margin-left: 30rpx;
+    vertical-align: middle;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    font-size: 70%;
+    position: relative;
+    top: 20rpx;
+}
+
+.author-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+
+.main-image1 {
+    width: 95px;
+    height: 80px;
+    margin: 5px 5px 10px 15px;
+}
+
+.main-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    margin-left: 30rpx;
+    font-size: 80%;
+}
+
+.horizon {
+    margin: 10px 0px 10px 0px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.money {
+    position: absolute;
+    right: 30rpx;
+    font-size: 140%;
+    color: #F2CE87;
+    margin-top: 10rpx;
+}
+
+.description {
+    color: #50B397;
+    font-size: 70%;
+    margin: 30rpx;
+    position: relative;
+    bottom: 15rpx;
+}
+
+.delete {
+    position: absolute;
+    right: 1rpx;
+}

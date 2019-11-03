@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="body">
+    <view class="tab-under">
+      <view bindtap="goDetailsPage" class="message-container" data-_id="{{item._id}}" wx:for="{{recordData}}" wx:key="key">
+        <view class="author">
+          <image class="head-image" src="{{item.authorIcon}}"></image>
+          <view class="author-text">
+            <text>{{item.authorName}}</text>
+            <text>{{item.time}}</text>
+          </view>
+          <text class="money">￥{{item.Price}}</text>
+        </view>
+        <view class="main-image">
+          <image class="main-image1" mode="aspectFill" src="{{item}}" wx:for="{{item.photo}}" wx:key="key"></image>
+        </view>
+        <text class="text">{{item.title}}</text>
+        <view class="horizon"></view>
+        <view class="description">
+          <text>地址 </text>
+          <text>{{item.address}}</text>
+          <text> | </text>
+          <text>{{item.label}}</text>
+          <text catchtap="polish" class="polish" id="{{item._id}}">擦亮</text>
+          <text catchtap="deleted" class="delete" id="{{item._id}}">删除</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

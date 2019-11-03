@@ -1,0 +1,54 @@
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #09BB07;
+    width: 100%;
+    height: 140px;
+}
+
+.userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    color: #fff;
+}
+
+/* .usermotto {
+    margin-top: 200px;
+} */
+
+.item {
+    width: 100%;
+    height: 100rpx;
+    background: #FFF;
+    border: 1px solid rgba(0,0,0,.1);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    flex-direction: row; /* 从左到右排列 */
+    align-items: center;
+    /* transition: all 300ms ease; */
+}
+
+.image {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 20rpx;
+}
+
+.text {
+    margin-left: 20rpx;
+}
+
+.text-end {
+    position: absolute;
+    right: 40rpx;
+    font-size: 90%;
+    color: #919191;
+}

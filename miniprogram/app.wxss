@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column; /* 垂直方向自上而下排列 */
+  align-items: center; /* 交叉轴的中点对齐 */
+  justify-content: space-between; /* 两端对齐 */
+  box-sizing: border-box;
+} 
+
+.nodata_img {
+    display: block;
+    width: 45px;
+    height: 45px;
+}

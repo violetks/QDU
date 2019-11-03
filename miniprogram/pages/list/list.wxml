@@ -1,0 +1,69 @@
+<view class="container">
+  <view class="body">
+  <!-- 搜索框 -->
+    <view class="search">
+      <input bindinput="iptKeyword" class="search-input" placeholder="请输入关键词" value="{{inputValue}}"></input>
+      <image catchtap="btnSearch" class="search-icon" mode="aspectFit" src="../../images/search.png" style="width:18px; height:18px"></image>
+    </view>
+<!-- 下拉菜单 -->
+    <view class="filtrate">
+      <view bindtap="clickAddress" class="address">
+        <view class="address-text {{selectArea1?'address-text-change':''}}">{{firstAddress}}</view>
+        <image class="address-image {{selectArea1?'rotateRight':''}}" src="../../images/v6.png"></image>
+      </view>
+      <view bindtap="clickRank" class="Rank">
+        <view class="Rank-text {{selectArea2?'Rank-text-change':''}}">{{firstRank}}</view>
+        <image class="Rank-image {{selectArea2?'rotateRight':''}}" src="../../images/v6.png"></image>
+      </view>
+    </view>
+    <view class="address-box">
+      <view class="address-select" hidden="{{selectAddress}}">
+        <view bindtap="addressSelect" class="select_one" data-address="全校">全校</view>
+        <view bindtap="addressSelect" class="select_one" data-address="东校区东院">东校区东院</view>
+        <view bindtap="addressSelect" class="select_one" data-address="东校区西院">东校区西院</view>
+        <view bindtap="addressSelect" class="select_one" data-address="中心校区东院">中心校区东院</view>
+        <view bindtap="addressSelect" class="select_one" data-address="中心校区西院">中心校区西院</view>
+        <view bindtap="addressSelect" class="select_one" data-address="松山校区">松山校区</view>
+      </view>
+    </view>
+    <view class="Rank-box">
+      <view class="Rank-select" hidden="{{selectRank}}">
+        <view bindtap="rankSelect" class="select_one" data-rank="最新发布">最新发布</view>
+        <view bindtap="rankSelect" class="select_one" data-rank="价格最低">价格最低</view>
+        <view bindtap="rankSelect" class="select_one" data-rank="价格最高">价格最高</view>
+      </view>
+    </view>
+    <!-- 搜索结果展示 -->
+    <view class="tab-under">
+      <view bindtap="goDetailsPage" class="message-container" data-_id="{{item._id}}" wx:for="{{recordData}}" wx:key="key">
+        <view class="author">
+          <image class="head-image" src="{{item.authorIcon}}"></image>
+          <view class="author-text">
+            <text>{{item.authorName}}</text>
+            <text>{{item.time}}</text>
+          </view>
+          <text class="money">￥{{item.Price}}</text>
+        </view>
+        <view class="main-image">
+          <image class="main-image1" mode="aspectFill" src="{{item}}" wx:for="{{item.photo}}" wx:key="key"></image>
+        </view>
+        <text class="text">{{item.title}}</text>
+        <view class="horizon"></view>
+        <view class="description">
+          <text>地址 </text>
+          <text>{{item.address}}</text>
+          <text> | </text>
+          <text>{{item.label}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="load_more" hidden="{{!loading}}">
+      <view class="load_loading"></view>
+      <view class="load-tips">正在加载……</view>
+    </view>
+    <view class="load_end" hidden="{{!loaded}}">没有更多数据了……</view>
+    <view class="load_more" hidden="{{hidden}}"></view>
+    <view class="load_no" hidden="{{hidden}}">暂无匹配结果，换个词试试吧</view>
+  </view>
+</view>

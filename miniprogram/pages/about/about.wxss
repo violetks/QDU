@@ -1,0 +1,15 @@
+.container {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.title {
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.text {
+  color: gray;
+  margin-top: 20rpx;
+  font-size: 14px;
+}

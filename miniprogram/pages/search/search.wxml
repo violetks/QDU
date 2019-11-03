@@ -1,0 +1,54 @@
+<view class="container">
+    <view class="body">
+        <view class="search">
+            <input bindinput="iptKeyword" class="search-input" placeholder="请输入关键词" value="{{inputValue}}"></input>
+            <image catchtap="btnSearch" class="search-icon" mode="aspectFit" src="../../images/search.png" style="width:18px; height:18px"></image>
+        </view>
+        <view class="tab">
+            <view bindtap="tabFun" class="tab-left">
+                <view class="{{tabArr.curHdIndex=='0'?'active':''}}" data-id="0" id="tab-hd01">二手书</view>
+                <view class="{{tabArr.curHdIndex=='1'?'active':''}}" data-id="1" id="tab-hd03">生活用品</view>
+                <view class="{{tabArr.curHdIndex=='2'?'active':''}}" data-id="2" id="tab-hd04">衣物</view>
+                <view class="{{tabArr.curHdIndex=='3'?'active':''}}" data-id="3" id="tab-hd05">电子产品</view>
+                <view class="{{tabArr.curHdIndex=='4'?'active':''}}" data-id="4" id="tab-hd06">运动健身</view>
+                <view class="{{tabArr.curHdIndex=='5'?'active':''}}" data-id="5" id="tab-hd08">杂物</view>>
+                </view>
+            </view>
+            <view class="tab-right">
+                <view class="right-item {{tabArr.curBdIndex=='0'?'active':''}}">
+                    <button bindtap="goListPage" class="items" id="教材" size="mini">教材</button>
+                    <button bindtap="goListPage" class="items" id="中外文学" size="mini">中外文学</button>
+                </view>
+                <view class="right-item {{tabArr.curBdIndex=='1'?'active':''}}">
+                    <button bindtap="goListPage" class="items" id="化妆品" size="mini">化妆品</button>
+                    <button bindtap="goListPage" class="items" id="寝室家具" size="mini">寝室家具</button>
+                </view>
+                <view class="right-item {{tabArr.curBdIndex=='2'?'active':''}}">
+                    <button bindtap="goListPage" class="items" id="衣服" size="mini">衣服</button>
+                    <button bindtap="goListPage" class="items" id="鞋子" size="mini">鞋子</button>
+                    <button bindtap="goListPage" class="items" id="箱包" size="mini">箱包</button>
+                    <button bindtap="goListPage" class="items" id="配饰" size="mini">配饰</button>
+                </view>
+                <view class="right-item {{tabArr.curBdIndex=='3'?'active':''}}">
+                    <button bindtap="goListPage" class="items" id="手表" size="mini">手表</button>
+                    <button bindtap="goListPage" class="items" id="手机及相关" size="mini">手机及相关</button>
+                    <button bindtap="goListPage" class="items" id="摄像机那些" size="mini">摄像机那些</button>
+                    <button bindtap="goListPage" class="items" id="电脑和它的配件" size="mini">电脑和它的配件</button>
+                </view>
+                <view class="right-item {{tabArr.curBdIndex=='4'?'active':''}}">
+                    <button bindtap="goListPage" class="items" id="健身器材" size="mini">健身器材</button>
+                    <button bindtap="goListPage" class="items" id="球类" size="mini">球类</button>
+                    <button bindtap="goListPage" class="items" id="轮滑类" size="mini">轮滑类</button>
+                    <button bindtap="goListPage" class="items" id="运动相关" size="mini">运动相关</button>
+                </view>
+
+                <view class="right-item {{tabArr.curBdIndex=='5'?'active':''}}">
+                    <button bindtap="goListPage" class="items" id="杂物" size="mini">杂物</button>
+                    <view>
+                        <text class="text">“找不到分类的都在这”</text>
+                    </view>
+                </view>
+
+        </view>
+    </view>
+</view>

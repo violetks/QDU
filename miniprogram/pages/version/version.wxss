@@ -1,0 +1,13 @@
+.container {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.title {
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.text {
+  margin-top: 20rpx;
+}

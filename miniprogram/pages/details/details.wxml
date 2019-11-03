@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="body">
+    <!--详情页轮播图  -->
+    <view class="swiper">
+      <swiper autoplay="true" circular="true" class="swiper" duration="800" indicatorActiveColor="#ffffff" indicator-dots="true" interval="4000">
+        <swiper-item wx:for="{{detailsPageData.photo}}" wx:key="key">
+          <image bindtap="preview" class="slide-image" data-src="{{item}}" mode="aspectFit" src="{{item}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 标题部分 -->
+    <view class="top">
+      <view class="line1">
+        <text class="title">{{detailsPageData.title}}</text>
+        <text class="money">￥{{detailsPageData.Price}}</text>
+      </view>
+      <view class="description">
+        <text class="address">{{detailsPageData.address}}</text>
+        <text class="label">{{detailsPageData.label}}</text>
+      </view>
+    </view>
+    <!-- 卖家信息部分 -->
+    <view class="author">
+      <image bindtap="goMysellPage" class="authorIcon" src="{{detailsPageData.authorIcon}}"></image>
+      <view class="author-text">
+        <text>{{detailsPageData.authorName}}</text>
+        <text class="date">{{detailsPageData.time}}</text>
+      </view>
+      <view bindtap="goMysellPage" class="total">
+        <text>{{total}}</text>
+        <text>在售宝贝</text>
+      </view>
+    </view>
+    <view class="details">
+      <text class="text">商品详情</text>
+      <text class="text">{{detailsPageData.detail}}</text>
+    </view>
+  </view>
+  <!-- 底部 -->
+  <view class="foot">
+    <view catchtap="collectTap" class="like" wx:if="{{collected}}">
+      <image class="like-image" src="{{src1}}"></image>
+      <text class="like-text">喜欢</text>
+    </view>
+    <view catchtap="collectTap" class="like" wx:else>
+      <image class="like-image" src="{{src3}}"></image>
+      <text class="like-text">喜欢</text>
+    </view>
+    <button class="button-show" openType="share">
+      <image class="show-image" src="{{src2}}"></image>
+      <text class="show-text">分享</text>
+    </button>
+    <view bindtap="call" class="call">
+      <text class="call-text">联系卖家</text>
+    </view>
+  </view>
+</view>

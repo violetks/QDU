@@ -1,0 +1,60 @@
+<form bindreset="formReset" bindsubmit="formSubmit">
+  <view class="item">
+    <text class="text">分类</text>
+    <picker bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" mode="multiSelector" range="{{multiArray}}" value="{{multiIndex}}">
+      <view class="picker">
+        {{multiArray[0][ multiIndex[0] ]}}，{{multiArray[1][ multiIndex[1] ]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="item">
+    <text class="text">成色</text>
+    <picker bindchange="bindPickerChange" range="{{array}}" value="{{index}}">
+      <view class="picker">{{array[index]}}</view>
+    </picker>
+  </view>
+
+  <view class="item">
+    <input bindinput="iptTitle" class="input" maxlength="15" placeholder="请输入标题(必填,不超过15个字)" placeholderClass="placeholder" value="{{form_info}}"></input>
+  </view>
+
+  <view class="item">
+    <input bindinput="iptPrice" class="input" placeholder="请输入转账价格(必填)" placeholderClass="placeholder" type="digit" value="{{form_info}}"></input>
+  </view>
+
+  <view class="item1"></view>
+
+  <view class="item">
+    <input bindinput="iptPhone" class="input" maxlength="11" placeholder="请输入联系方式(必填)" placeholderClass="placeholder" type="number" value="{{form_info}}"></input>
+  </view>
+
+  <view class="item">
+    <text class="text">地址</text>
+    <picker bindchange="bindPickerChange1" range="{{addressArray}}" value="{{addressIndex}}">
+      <view class="picker">{{addressArray[addressIndex]}}</view>
+    </picker>
+  </view>
+
+  <view class="item1"></view>
+
+  <view class="item2">
+    <view class="textarea-wrp">
+      <textarea bindinput="iptDetail" cursorSpacing="50" maxlength="200" placeholder="请输入商品描述（200字以内）" placeholderClass="placeholder" style="height: 5em" value="{{form_info}}"></textarea>
+    </view>
+  </view>
+
+  <view class="foot-body">
+    <view catchtap="joinPicture" class="educt_upload_add" data-index="{{0}}">
+      <image class="add-image" src="../../images/imageAdd.png"></image>
+    </view>
+    <view class="educt_hasupload_pic" wx:for="{{tempFilePaths}}" wx:key="index">
+      <image class="upload" src="{{item.pic}}"></image>
+      <image catchtap="clearImg" class="delete" data-index="{{index}}" src="../../images/delete.png"></image>
+    </view>
+  </view>
+
+  <view class="btn-area">
+    <button class="button" formType="submit">发布</button>
+  </view>
+</form>

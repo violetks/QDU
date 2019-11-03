@@ -1,0 +1,6 @@
+<view class="container">
+  <text class="title">关于小程序</text>
+  <text class="text">QDU二手信息平台旨在为青大的同学提供一个便利的交易环境，同学们可以在此搜索想要的信息并通过卖家提供的联系方式联系他们。</text>
+  <text class="title">关于以后</text>
+  <text class="text">QDU二手信息平台以后还会有更新，会更加完善，大家使用过程中遇到的问题，觉得有些功能需要完善，有什么好的建议，都可以联系我。谢谢大家的支持</text>
+</view>

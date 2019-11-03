@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/mine/mine",
+    "pages/publish/publish",
+    "pages/love/love",
+    "pages/shelves/shelves",
+    "pages/details/details",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/about/about",
+    "pages/mysell/mysell",
+    "pages/version/version",
+    "pages/new/new",
+    "pages/guide/guide"
+  ],
+  "window": {
+    "backgroundColor": "#eceff4",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#09BB07",
+    "navigationBarTitleText": "QDU二手信息平台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8A8A8A",
+    "selectedColor": "#50B397",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F9FB",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "images/main.png",
+        "selectedIconPath": "images/mainS.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "images/publish.png",
+        "selectedIconPath": "images/publishS.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mineS.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
